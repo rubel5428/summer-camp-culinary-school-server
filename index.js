@@ -44,7 +44,7 @@ const verifyJWT = (req, res, next) => {
 async function run() {
     try {
         // Connect the client to the server	(optional starting in v4.7)
-        await client.connect();
+        // await client.connect();
 
         const usersCollection = client.db('assignment-12').collection('users');
         const classCollection = client.db('assignment-12').collection('class');
